@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Covid19 from "./components/Covid19";
 
 function App() {

@@ -14,7 +14,10 @@ const CovidMap = ({ countries }) => {
     layer.options.fillColor = country.properties.color;
     const name = country.properties.ADMIN;
     const confirmedText = country.properties.confirmedText;
-    layer.bindPopup(`${name} ${confirmedText}`);
+    const activeText =country.properties.activeText;
+    const recoveredText =country.properties.recoveredText;
+    const deathText=country.properties.deathText;
+    layer.bindPopup(`${name} ${confirmedText} ${activeText} ${recoveredText} ${deathText}`);
   };
 
   return (
